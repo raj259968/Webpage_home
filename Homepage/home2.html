@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KPB Solution - Business Consultants</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #34495e;
+            color: blue;
+            padding: 35px 0;
+            width: 100%;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: blue;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: black;
+        }
+
+        #home {
+            background:url('home_background.jpeg');
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            color: white;
+            text-align: center;
+            padding: 350px 0;
+        }
+
+        #home h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        #click {
+            display: inline-block;
+            background-color: red;
+            width:100px;
+            color: white;
+            padding: 10px ;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #click:hover {
+            background-color: #c0392b;
+        }
+
+        #services .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        #services .container{
+        padding:70px;
+        }
+    
+        #services h2 {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+
+        .service {
+            background-color: grey;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+
+        #about {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+
+        #about .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #about img {
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        #about .about-text {
+            width: 55%;
+        }
+
+        #team .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        #contact form {
+            display: grid;
+            gap: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #ecf0f1;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">KPB Solution</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Elevate Your Business with KPB Solution</h1>
+            <p>Expert business consulting to drive growth and innovation</p>
+            <a href="#contact"> <input type="button" id="click" value="Get Started"></a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+
+                <div class="service">
+                    <h3>Strategic Planning</h3>
+                    <p>Develop comprehensive strategies to achieve your business goals.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Financial Advisory</h3>
+                    <p>Expert financial guidance to optimize your company's fiscal health.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Operational Excellence</h3>
+                    <p>Streamline processes and boost efficiency across your organization.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <img src="KPB_logo.jpeg">
+            <div class="about-text">
+                <h2>About KPB Solution</h2>
+                <p>KPB Solution is a leading business consultancy firm dedicated to helping organizations achieve their full potential. With years of experience and a team of expert consultants, we provide tailored solutions to drive growth, optimize operations, and navigate complex business challenges.</p>
+                <p>Our commitment to excellence and innovation sets us apart, ensuring that our clients receive cutting-edge strategies and actionable insights to thrive in today's competitive landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="shu.jpg" alt="shubham">
+                    <h3>Shubham</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="sak.jpg" alt="saksham">
+                    <h3>Saksham</h3>
+                    <p>HR</p>
+                </div>
+                <div class="team-member">
+                    <img src="raj.jpg" alt="raj">
+                    <h3>Raj</h3>
+                    <p>Lead Consultant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>@2024 KPB Solution. Twitter|Linkedin </p>
+        </div>
+    </footer>
+</body>
+</html>
